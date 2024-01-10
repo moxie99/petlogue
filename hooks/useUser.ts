@@ -8,7 +8,7 @@ import { User } from '../types/user';
 import { Property } from '../types/property';
 import { queryKeys } from '../constants';
 import { alterAllowsNotifications, alterPushToken } from '../services/user';
-import { socket } from 'constants/socket';
+import { socket } from '../constants/socket';
 
 export const useUser = () => {
   const { user, setUser } = useContext(AuthContext);

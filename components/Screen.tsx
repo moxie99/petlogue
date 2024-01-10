@@ -7,7 +7,7 @@ import {
 } from 'react-native';
 
 import { Loading } from './Loading';
-import { useLoading } from 'hooks/useLoading';
+import { useLoading } from '../hooks/useLoading';
 
 export const Screen = ({
   children,

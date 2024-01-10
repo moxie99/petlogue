@@ -180,7 +180,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     top: 20,
     left: 15,
-    backgroundColor: "rgba(0, 0, 0, 0.7)", // use this to give the black background opacity but not the text
+    backgroundColor: "rgba(0, 0, 0, 0.7)",
     paddingVertical: 3,
     paddingHorizontal: 10,
     borderRadius: 30,
