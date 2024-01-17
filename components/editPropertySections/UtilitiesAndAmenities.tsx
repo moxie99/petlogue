@@ -40,41 +40,41 @@ export const UtilitiesAndAmenities = ({
 }) => {
   return (
     <View>
-      <Text category={"h6"} style={styles.defaultPaddingVertical}>
+      <Text category={'h6'} style={styles.defaultPaddingVertical}>
         Utilities Included
       </Text>
       <AmenitiesList
         amenitiesList={propertyUtilities}
         setAmenities={setFieldValue}
-        field={"includedUtilities"}
+        field={'includedUtilities'}
         totalUnitAmenities={includedUtilities}
       />
 
-      <Text category={"h6"} style={styles.defaultPaddingVertical}>
-        Property Amenities
+      <Text category={'h6'} style={styles.defaultPaddingVertical}>
+        Pet Amenities
       </Text>
 
       <Select
-        label="Pets Allowed"
+        label='Pets Allowed'
         item={petsAllowed}
         items={petValues}
-        onItemChange={(item) => setFieldValue("petsAllowed", item)}
+        onItemChange={(item) => setFieldValue('petsAllowed', item)}
         style={styles.input}
         isNullable={false}
       />
       <Select
-        label="Laundry Type"
+        label='Laundry Type'
         item={laundryType}
         items={laundryValues}
-        onItemChange={(item) => setFieldValue("laundryType", item)}
+        onItemChange={(item) => setFieldValue('laundryType', item)}
         style={styles.input}
         isNullable={false}
       />
       <Input
         value={parkingFee}
-        onChangeText={handleChange("parkingFee")}
-        label="Parking Fee"
-        keyboardType="decimal-pad"
+        onChangeText={handleChange('parkingFee')}
+        label='Parking Fee'
+        keyboardType='decimal-pad'
         style={styles.input}
       />
 
@@ -82,7 +82,7 @@ export const UtilitiesAndAmenities = ({
         style={styles.input}
         amenitiesList={propertyAmenities}
         setAmenities={setFieldValue}
-        field={"amenities"}
+        field={'amenities'}
         totalUnitAmenities={amenities}
       />
       <Divider style={[styles.divider, styles.input]} />

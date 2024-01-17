@@ -23,27 +23,27 @@ export const GeneralPropertyInfo = ({
 }) => {
   return (
     <View>
-      <Text style={styles.header} category="h6">
-        General Property Info
+      <Text style={styles.header} category='h6'>
+        General Pet Info
       </Text>
 
       {images.length < 10 ? (
         <View style={styles.largeMarginTop}>
           <Text style={styles.smallHeader}>Photos</Text>
           <TouchableOpacity
-            onPress={() => pickImage(images, "images", setFieldValue)}
+            onPress={() => pickImage(images, 'images', setFieldValue)}
             style={styles.photoButton}
           >
             <Row style={styles.row}>
               <MaterialCommunityIcons
-                name="cloud-upload-outline"
+                name='cloud-upload-outline'
                 size={24}
-                color={"black"}
+                color={'black'}
                 style={styles.icon}
               />
-              <Text status="info">Upload Photos</Text>
+              <Text status='info'>Upload Photos</Text>
             </Row>
-            <Text style={styles.photoText} category="c2" appearance={"hint"}>
+            <Text style={styles.photoText} category='c2' appearance={'hint'}>
               Photos must be in jpg or png format, and no larger than 10 MB in
               size.
             </Text>
@@ -55,7 +55,7 @@ export const GeneralPropertyInfo = ({
         <ImageCarousel
           images={images}
           xShown
-          field={"images"}
+          field={'images'}
           setImages={setFieldValue}
           style={styles.largeMarginTop}
         />
@@ -64,7 +64,7 @@ export const GeneralPropertyInfo = ({
       <View style={styles.largeMarginTop}>
         <Text style={styles.smallHeader}>Description (optional)</Text>
         <DescriptionInput
-          field="description"
+          field='description'
           setDescription={setFieldValue}
           value={description}
         />
