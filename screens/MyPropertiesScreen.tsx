@@ -35,28 +35,28 @@ export const MyPropertiesScreen = () => {
               <Button
                 accessoryLeft={
                   <Entypo
-                    name="plus"
+                    name='plus'
                     size={16}
-                    color={theme["color-primary-500"]}
+                    color={theme['color-primary-500']}
                   />
                 }
-                appearance={"ghost"}
-                size="small"
+                appearance={'ghost'}
+                size='small'
                 style={styles.button}
                 onPress={addPropertyNavigation}
               >
-                Add a Property
+                Add a Pet
               </Button>
               <Button
                 accessoryLeft={
                   <MaterialCommunityIcons
-                    name="refresh"
+                    name='refresh'
                     size={16}
-                    color={theme["color-primary-500"]}
+                    color={theme['color-primary-500']}
                   />
                 }
-                appearance={"ghost"}
-                size="small"
+                appearance={'ghost'}
+                size='small'
                 style={styles.button}
                 onPress={() => properties.refetch()}
               >
@@ -71,7 +71,7 @@ export const MyPropertiesScreen = () => {
               property={item}
               myProperty
               onPress={() =>
-                navigation.navigate("EditProperty", { propertyID: item.ID })
+                navigation.navigate('EditProperty', { propertyID: item.ID })
               }
             />
           )}
@@ -80,17 +80,17 @@ export const MyPropertiesScreen = () => {
         />
       ) : (
         <>
-          <ModalHeader xShown text="JPApartments" />
+          <ModalHeader xShown text='JPApartments' />
           <View style={styles.noPropertiesContainer}>
             <LottieView
               autoPlay
               style={styles.lottie}
-              source={require("../assets/lotties/AddProperty.json")}
+              source={require('../assets/lotties/AddProperty.json')}
             />
-            <Text category={"h6"} style={styles.text}>
+            <Text category={'h6'} style={styles.text}>
               You Have No Properties
             </Text>
-            <Text appearance={"hint"} style={[styles.text, styles.bottomText]}>
+            <Text appearance={'hint'} style={[styles.text, styles.bottomText]}>
               Add a property and start renting!
             </Text>
 
