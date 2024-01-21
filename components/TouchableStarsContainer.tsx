@@ -40,7 +40,7 @@ export const TouchableStarsContainer = ({
   return (
     <View style={[styles.container, style]}>
       <Row>{starsComponent}</Row>
-      <Text category={"c1"}>{`This property is ${starText[stars - 1]}`}</Text>
+      <Text category={'c1'}>{`This pet is ${starText[stars - 1]}`}</Text>
     </View>
   );
 };

@@ -25,11 +25,11 @@ export const DescriptionInput = ({
         autoFocus={autoFocus}
         value={value}
         numberOfLines={8}
-        textAlignVertical="top"
+        textAlignVertical='top'
         onChangeText={handleChangeText}
-        placeholder="What's great about this property?"
+        placeholder="What's great about this pet ?"
       />
-      <Text appearance={"hint"} category="c1">
+      <Text appearance={'hint'} category='c1'>
         {maxChars - value.length} Characters Remaining
       </Text>
     </>
