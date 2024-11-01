@@ -90,7 +90,6 @@ export const useAuth = () => {
   const nativeLogin = async (values: { email: string; password: string }) => {
     try {
       setLoading(true);
-
       const user = await loginUser(values.email, values.password);
       handleSignInUser(user);
     } catch (error) {
